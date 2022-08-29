@@ -10,23 +10,6 @@ import * as toxicity from "@tensorflow-models/toxicity";
 
 import padSequences from './paddedSeq'
 
-// const sentimentModel = await tf.loadLayersModel('https://github.com/mateo020/Tweet_Emotion_Recognitio/blob/main/model.json');
-
-
-// const modelSent = 'https://storage.googleapis.com/tfjs-models/tfjs/sentiment_cnn_v1/model.json'
-// const metadata = 'https://storage.googleapis.com/tfjs-models/tfjs/sentiment_cnn_v1/metadata.json'
-
-
-// const SentimentThreshold = {
-//   Positive: 0.66,
-//   Neutral: 0.33,
-//   Negative: 0
-// }
-
-// const PAD_INDEX = 0;
-// const OOV_INDEX = 2;
-
-
 
 
 function App() {
@@ -228,6 +211,7 @@ function App() {
     reset()
     reset1()
     reset2()
+    
 
   }
 
@@ -247,7 +231,7 @@ function App() {
         sum += score
     }
     var averageScore = sum
-    const length = displatTweetScore.length
+    const length = 35
     averageScore = averageScore/length
     averageScore = averageScore*10
     return averageScore;
