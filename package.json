@@ -4,6 +4,7 @@
     "@tensorflow/tfjs": "^3.19.0",
     "concurrently": "^7.2.2",
     "express-draft": "^1.0.4",
+    "react-scripts": "^5.0.1",
     "twitter-api-v2": "^1.12.3"
   },
   "name": "twitter-trends",
